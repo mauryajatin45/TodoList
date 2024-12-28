@@ -1,3 +1,6 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Global Reset */
 * {
   margin: 0;
@@ -5,9 +8,6 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; /* Applied Poppins font globally */
 }
-
-/* Import Poppins Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 /* Main Container */
 .mainContainer {
@@ -125,6 +125,7 @@
   margin-top: 40px;
   z-index: 20; /* Ensures task list is above snowflakes */
 }
+
 .TaskListed li {
   background-color: #333;
   padding: 18px;
@@ -161,6 +162,23 @@
   color: #c0392b;
 }
 
+/* Footer Section */
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #00ff87;
+  text-align: center;
+  z-index: 20; /* Ensure footer is above snowflakes */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 /* Responsive Styling */
 @media (max-width: 768px) {
   .mainContainer {
@@ -183,6 +201,10 @@
   .taskContainer {
     width: 100%;
   }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -199,4 +221,10 @@
     font-size: 1rem;
     padding: 14px;
   }
+
+  .footer p {
+    margin: 0;
+    font-size: 0.6rem;
+  }
+
 }
