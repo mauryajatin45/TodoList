@@ -1,5 +1,3 @@
-Here's the updated `README.md` with the additional sections you requested:
-
 ```markdown
 # Todo App with Snowflakes 🎄
 
